@@ -1,0 +1,52 @@
+.section5
+{
+    margin-top: 400px;
+    background: rgb(154,15,152);
+    background: linear-gradient(180deg, rgba(154,15,152,1) 36%, rgba(234,5,153,1) 100%);
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 60px;
+    padding: 60px;
+}
+/* left zone img */
+.left_side_zone img
+{
+    transform: rotate(0deg) scaleX(-1);
+    margin-left: 40px;
+}
+
+/* right zone  */
+
+.right_side_zone h3
+{
+    color: white;
+    margin-top: 20px;
+}
+.right_side_zone .materials_learned
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+/* ????? */
+.img_txt
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    
+}
+@media ( width < 480px) {
+   .section5 .left_side_zone .img_section5
+   {display: none;}   
+
+    .section5
+    {
+        width: 460px;
+    }
+}

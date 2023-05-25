@@ -1,0 +1,110 @@
+.section8
+{
+    margin-top: 400px;
+}
+/* mini title h2 */
+.mini_title
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #9a0f98 ;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+/* divider */
+
+.divider
+{
+ height: 3px;
+ width: 200px;
+ background-color: #e858ae;
+ margin-bottom: 20px;
+ margin: auto;
+}
+.before_footer_section8
+{
+    height: 500px; 
+}
+
+.before_footer_section8 .container_form_zone
+{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.before_footer_section8 .container_form_zone .left_size_form_zone
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    padding: 20px;
+    gap: 10px;
+}
+.before_footer_section8 .container_form_zone .left_size_form_zone .form_left 
+{
+   display: flex;
+   flex-direction: column;
+   gap: 1px;
+}
+
+.before_footer_section8 .container_form_zone .left_size_form_zone .comment_left
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.before_footer_section8 .container_form_zone .left_size_form_zone .comment_left a
+{
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    border-radius: 20%;
+    background: rgb(57,6,90);
+    background: linear-gradient(90deg, rgba(57,6,90,0.9374124649859944) 24%, rgba(234,5,153,0.9009978991596639) 91%);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.before_footer_section8 .container_form_zone .left_size_form_zone .comment_left a:hover
+{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.before_footer_section8 .container_form_zone .right_size_form_zone img
+{
+    height: 80%;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.before_footer_section8 .container_form_zone .right_size_form_zone img:hover
+{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+@media (width < 480px) {
+    .before_footer_section8 .container_form_zone
+    {
+        grid-template-columns: 1fr;
+    }
+    .section8 .before_footer_section8 .container_form_zone
+    {
+        place-items: center;
+        
+    }
+     .section8 .container_form_zone .right_size_form_zone
+    {
+        display: none;
+    }
+    .before_footer_section8 .container_form_zone .left_size_form_zone
+    {
+        grid-template-columns: 1fr;
+    }
+}

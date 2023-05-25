@@ -1,0 +1,237 @@
+.big_container_top_side
+{
+    background: rgb(74,5,102);
+    background: linear-gradient(90deg, rgba(74,5,102,1) 3%, rgba(101,4,144,1) 28%, rgba(128,64,181,1) 48%, rgba(151,77,212,1) 71%, rgba(146,68,212,1) 91%);
+
+}
+
+
+/* navbar */
+.navbar
+{
+    display: flex;
+    margin-left: 30px;
+    text-transform: uppercase;
+    padding: 20px;
+    position: absolute;
+}
+
+    
+
+.navbar a
+{   
+    margin: 0 10px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:nth-child(1)
+{
+    margin-left: 160px;
+}
+
+/* under navbar */
+
+.under_navbar
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 90vh;
+}
+
+/* left side */
+
+.left_side img:nth-child(1)
+{
+    width: 60%;
+    height: 60%;
+    margin-left: 100px;
+    margin-top: 120px;
+    transition: 0.5s;
+
+}
+.left_side img:hover:nth-child(1)
+{
+    cursor: pointer;
+    transform: scale(1.2);
+   
+}
+
+/* right side */
+.right_side
+{
+display: flex;
+flex-direction: column;
+text-transform: uppercase;
+}
+
+.right_side_text
+{
+    text-indent: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 300px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.right_side_buttons
+{
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.right_side_buttons button
+{
+ color: #e858ae;
+ background-color: transparent;
+ padding: 10px;
+ border-radius: 20px;
+ box-shadow: 10px solid red;
+ border:2px solid#e858ae ;
+ transition: 0.8s;
+ font-size: 25px;
+}
+
+
+.right_side_buttons button:hover:nth-child(1)
+{
+    cursor: pointer;
+    background-color: #e858ae;
+    color: #ffffff;
+    
+}
+
+.right_side_buttons button:hover:nth-child(2)
+{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #e858ae;
+}
+
+.right_side h2
+{
+    font-size: 50px;
+}
+
+
+/* whatsapp zone */
+
+.whatsapp_pictures
+{
+    padding: 20px;
+
+}
+
+.whatsapp_pictures .whatsapp_img .whatasapp_icon
+{
+    z-index: 999;
+    bottom: 50px;
+    width: 60px;
+    height: 60px;
+    left: 50px;
+    position: fixed;
+    cursor: pointer;
+    background: #4caf50 ;
+    border: 2px solid #ffffff ;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.whatsapp_pictures .whatsapp_img .whatasapp_icon:hover
+{
+    transform: scale(1.3);
+
+}
+
+label.menu {
+    width: 100%;
+  }
+  
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .menu ul li {
+    list-style: none;
+    padding: 10px 15px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+  
+  }
+  
+  .menu {
+    display: none;
+    position: relative;
+  
+    cursor: pointer;
+  }
+  
+  .menu__icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .menu input {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .menu input[type='checkbox']:checked + ul {
+    display: flex;
+    position: absolute;
+    translate: -50%;
+    left: 50%;
+  }
+  
+  @media (width < 480px) {
+    .menu {
+      display: inline-block;
+    }
+  
+    .menu ul {
+      display: none;
+    }
+  }
+
+@media (width < 480px ) {
+
+    
+    .navbar
+    {   
+        display: none;
+        
+    }
+
+
+   
+    .left_side
+    {
+        display: none;
+    }
+    .right_side
+    {
+        text-align: center;
+    }
+    .right_side_buttons
+    {
+        text-align: center;
+    }
+    .right_side_buttons .button1
+    {
+        margin-bottom: 10px;
+    }
+}
